@@ -73,7 +73,6 @@ streamlit run app.py
 - Extracts features like hour, day, month, weekday
 - Cleans messages and removes stopwords for word analysis
 - Uses emoji and collections to find emoji usage
-- Applies VADER to score sentiment: Positive, Neutral, or Negative
 - Generates interactive visualizations and statistics using Streamlit
 - Full logic is available in model.ipynb
 
@@ -91,7 +90,5 @@ To test the app:
 3. Tap the three dots (⋮) > More > Export chat.
 4. Select "Without Media".
 5. Save the `.txt` file and upload it in the app interface.
-
-A sample file `sample_chat.txt` is also included in the repository for quick testing.
 
 ---
