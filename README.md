@@ -18,13 +18,17 @@ A Python + Streamlit web app that analyzes WhatsApp chat exports and gives detai
 ## 🖼️ Demo Screenshots
 
 ### Overview
-![Overview](screenshots/overview.png)
+![Overview](screenshots/dashboard.png)
 
 ### Activity Timeline
-![Activity](screenshots/activity.png)
+![Daily Activity](screenshots/daily-activity.png)
+![Weekly Activity](screenshots/weekly-activity.png)
+![Monthly Activity](screenshots/monthly-activity.png)
+
 
 ### Emoji and Sentiment
-![Sentiment](screenshots/sentiment.png)
+![Sentiment](screenshots/sentiment-analysis.png)
+![Emoji](screenshots/emoji-analysis.png)
 
 ---
 
