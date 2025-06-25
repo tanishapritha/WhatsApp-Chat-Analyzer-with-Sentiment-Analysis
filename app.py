@@ -4,10 +4,10 @@ import plotly.express as px
 import helper
 import preprocessor
 
-# Set up Streamlit page with light theme
+
 st.set_page_config(page_title="WhatsApp Chat Analyzer", layout="wide")
 
-# Custom CSS for light mode
+
 light_theme_css = """
     <style>
         body { background-color: #f8f9fa; color: #212529; }
@@ -20,24 +20,24 @@ light_theme_css = """
 """
 st.markdown(light_theme_css, unsafe_allow_html=True)
 
-# Sidebar UI
+
 st.sidebar.image("logo.png", width=200)
 st.sidebar.title("WhatsApp Chat Analyzer 📊")
 
 uploaded_file = st.sidebar.file_uploader("Upload your chat file", type=["txt"])
 
 if uploaded_file is not None:
-    # Read and preprocess the file
+   
     data = uploaded_file.getvalue().decode("utf-8")
     df = preprocessor.preprocess(data)
 
-    # Select user
+
     user_list = df['user'].unique().tolist()
     user_list.sort()
     user_list.insert(0, "Overall")
     selected_user = st.sidebar.selectbox("Select User", user_list)
 
-    # Tabs for different sections
+ 
     tabs = st.tabs(["Overview", "Activity Insights", "Message Analysis", "Emoji & Sentiment"])
     
     with tabs[0]:  # Overview
