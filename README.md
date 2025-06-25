@@ -61,4 +61,37 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+---
 
+
+---
+
+## 🧪 How It Works (Summary)
+
+- Parses the .txt chat file using regular expressions
+- Structures the data into a DataFrame: timestamp, sender, message
+- Extracts features like hour, day, month, weekday
+- Cleans messages and removes stopwords for word analysis
+- Uses emoji and collections to find emoji usage
+- Applies VADER to score sentiment: Positive, Neutral, or Negative
+- Generates interactive visualizations and statistics using Streamlit
+- Full logic is available in model.ipynb
+
+---
+
+
+---
+
+## 🔍 Sample Input
+
+To test the app:
+
+1. Open WhatsApp on your phone.
+2. Go to any chat (group or individual).
+3. Tap the three dots (⋮) > More > Export chat.
+4. Select "Without Media".
+5. Save the `.txt` file and upload it in the app interface.
+
+A sample file `sample_chat.txt` is also included in the repository for quick testing.
+
+---
